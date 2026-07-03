@@ -11,10 +11,10 @@
   --mint: #effaf8;
   --line: rgba(32, 38, 58, 0.09);
   --shadow: 0 24px 70px rgba(92, 107, 130, 0.1);
-  --font-base: "Noto Sans JP", system-ui, sans-serif;
-  --font-display: "Inter", "Noto Sans JP", system-ui, sans-serif;
-  --font-round: "M PLUS Rounded 1c", "Noto Sans JP", system-ui, sans-serif;
-  --font-soft: "Zen Maru Gothic", "Noto Sans JP", system-ui, sans-serif;
+  --font-base: "Zen Kaku Gothic New", system-ui, sans-serif;
+  --font-display: "Outfit", "Zen Kaku Gothic New", system-ui, sans-serif;
+  --font-ui: "Outfit", "Zen Kaku Gothic New", system-ui, sans-serif;
+  --font-accent: "Shippori Mincho", "Zen Kaku Gothic New", serif;
 }
 
 * {
@@ -74,7 +74,7 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  font-family: var(--font-round);
+  font-family: var(--font-ui);
   font-weight: 900;
 }
 
@@ -91,7 +91,7 @@ a {
 .site-nav {
   display: flex;
   gap: clamp(18px, 2.4vw, 34px);
-  font-family: var(--font-round);
+  font-family: var(--font-ui);
   font-size: 13px;
   font-weight: 800;
   text-transform: uppercase;
@@ -245,7 +245,7 @@ a {
 .eyebrow {
   margin: 0 0 16px;
   color: #b99562;
-  font-family: var(--font-round);
+  font-family: var(--font-ui);
   font-size: 12px;
   font-weight: 900;
   text-transform: uppercase;
@@ -269,21 +269,21 @@ h1 {
 
 h2 {
   margin-bottom: 0;
-  font-family: var(--font-soft);
+  font-family: var(--font-accent);
   font-size: clamp(36px, 6vw, 82px);
   line-height: 0.98;
   font-weight: 900;
 }
 
 h3 {
-  font-family: var(--font-soft);
+  font-family: var(--font-accent);
   line-height: 1.35;
 }
 
 .hero-lead {
   width: min(520px, 100%);
   color: var(--ink-soft);
-  font-family: var(--font-soft);
+  font-family: var(--font-accent);
   font-size: clamp(15px, 1.6vw, 18px);
   font-weight: 700;
   line-height: 1.75;
@@ -304,7 +304,7 @@ h3 {
   padding: 0 24px;
   border: 1px solid currentColor;
   border-radius: 999px;
-  font-family: var(--font-round);
+  font-family: var(--font-ui);
   font-size: 13px;
   font-weight: 900;
   text-transform: uppercase;
@@ -394,7 +394,7 @@ h3 {
 
 .ticker span {
   padding: 15px 34px;
-  font-family: var(--font-round);
+  font-family: var(--font-ui);
   font-size: 13px;
   font-weight: 900;
   text-transform: uppercase;
@@ -454,7 +454,7 @@ time,
   color: var(--night);
   background: rgba(189, 235, 243, 0.54);
   border-radius: 999px;
-  font-family: var(--font-round);
+  font-family: var(--font-ui);
   font-size: 11px;
   font-weight: 900;
   text-transform: uppercase;
@@ -476,7 +476,7 @@ time,
 
 .profile-copy p {
   color: var(--ink-soft);
-  font-family: var(--font-soft);
+  font-family: var(--font-accent);
   font-size: clamp(16px, 2vw, 20px);
   font-weight: 700;
   line-height: 2.1;
@@ -497,7 +497,7 @@ time,
 
 .profile-data dt {
   color: var(--navy);
-  font-family: var(--font-round);
+  font-family: var(--font-ui);
   font-size: 11px;
   font-weight: 900;
   text-transform: uppercase;
@@ -559,7 +559,7 @@ time,
 }
 
 .text-link {
-  font-family: var(--font-round);
+  font-family: var(--font-ui);
   font-weight: 900;
   text-transform: uppercase;
   border-bottom: 2px solid var(--coral);
@@ -614,7 +614,7 @@ time,
 .video-card small {
   margin-top: 10px;
   color: rgba(32, 38, 58, 0.7);
-  font-family: var(--font-round);
+  font-family: var(--font-ui);
   font-weight: 800;
 }
 
@@ -671,7 +671,7 @@ time,
   justify-content: center;
   border: 1px solid rgba(38, 52, 72, 0.22);
   border-radius: 999px;
-  font-family: var(--font-round);
+  font-family: var(--font-ui);
   font-weight: 900;
 }
 
