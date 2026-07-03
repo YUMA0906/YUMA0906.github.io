@@ -1,16 +1,16 @@
 :root {
-  --ink: #121528;
-  --ink-soft: #59657a;
-  --paper: #fff7e9;
+  --ink: #20263a;
+  --ink-soft: #748195;
+  --paper: #fffdf8;
   --white: #ffffff;
-  --night: #1c2740;
-  --navy: #2f667b;
-  --cyan: #7dc9df;
-  --coral: #f2a35d;
-  --gold: #f9d775;
-  --mint: #d6f1ec;
-  --line: rgba(16, 20, 38, 0.14);
-  --shadow: 0 24px 70px rgba(74, 91, 115, 0.18);
+  --night: #313b58;
+  --navy: #6d9aaa;
+  --cyan: #bdebf3;
+  --coral: #e9bd82;
+  --gold: #faeab6;
+  --mint: #effaf8;
+  --line: rgba(32, 38, 58, 0.09);
+  --shadow: 0 24px 70px rgba(92, 107, 130, 0.1);
   --font-base: "Noto Sans JP", system-ui, sans-serif;
   --font-display: "Inter", "Noto Sans JP", system-ui, sans-serif;
   --font-round: "M PLUS Rounded 1c", "Noto Sans JP", system-ui, sans-serif;
@@ -65,8 +65,8 @@ a {
 .site-header.is-open {
   padding-block: 14px;
   color: var(--ink);
-  background: rgba(247, 245, 239, 0.9);
-  backdrop-filter: blur(18px);
+  background: rgba(255, 253, 248, 0.82);
+  backdrop-filter: blur(22px);
   border-bottom: 1px solid var(--line);
 }
 
@@ -83,8 +83,8 @@ a {
   width: 42px;
   height: 42px;
   place-items: center;
-  color: #704d2b;
-  background: linear-gradient(135deg, var(--gold), var(--cyan));
+  color: #6c7f8a;
+  background: linear-gradient(135deg, #fff3c6, #d9f5f8);
   border-radius: 50%;
 }
 
@@ -108,7 +108,7 @@ a {
   left: 0;
   height: 2px;
   content: "";
-  background: var(--coral);
+  background: #9fd8e4;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.2s ease;
@@ -156,10 +156,10 @@ a {
   padding-bottom: clamp(24px, 3vw, 40px);
   color: var(--ink);
   background:
-    linear-gradient(120deg, rgba(255, 255, 255, 0.55), transparent 34%),
-    radial-gradient(circle at 72% 18%, rgba(125, 201, 223, 0.44), transparent 24%),
-    radial-gradient(circle at 18% 86%, rgba(249, 215, 117, 0.62), transparent 26%),
-    linear-gradient(135deg, #fff8ea 0%, #fff0b7 44%, #cceff0 100%);
+    linear-gradient(120deg, rgba(255, 255, 255, 0.86), transparent 42%),
+    radial-gradient(circle at 74% 18%, rgba(189, 235, 243, 0.34), transparent 28%),
+    radial-gradient(circle at 16% 84%, rgba(250, 234, 182, 0.38), transparent 30%),
+    linear-gradient(135deg, #fffefb 0%, #fffaf0 48%, #f1fbfb 100%);
   isolation: isolate;
   overflow: hidden;
 }
@@ -169,10 +169,10 @@ a {
   inset: 0;
   pointer-events: none;
   content: "";
-  opacity: 0.3;
+  opacity: 0.18;
   background-image:
-    linear-gradient(rgba(52, 95, 120, 0.12) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(52, 95, 120, 0.12) 1px, transparent 1px);
+    linear-gradient(rgba(94, 128, 142, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(94, 128, 142, 0.1) 1px, transparent 1px);
   background-size: 92px 92px;
   mask-image: linear-gradient(to bottom, transparent, black 16%, black 76%, transparent);
 }
@@ -186,7 +186,7 @@ a {
   width: min(54vw, 740px);
   content: "";
   background:
-    linear-gradient(150deg, rgba(47, 102, 123, 0.92), rgba(125, 201, 223, 0.3) 58%, rgba(249, 215, 117, 0.08));
+    linear-gradient(150deg, rgba(185, 226, 234, 0.62), rgba(233, 248, 249, 0.28) 58%, rgba(255, 255, 255, 0.04));
   clip-path: polygon(24% 0, 100% 0, 82% 100%, 0 100%);
 }
 
@@ -205,7 +205,7 @@ a {
   right: -0.08em;
   bottom: 0.05em;
   z-index: 1;
-  color: rgba(255, 255, 255, 0.42);
+  color: rgba(128, 171, 185, 0.11);
   font-size: clamp(120px, 19vw, 290px);
   font-weight: 900;
   line-height: 0.76;
@@ -218,21 +218,21 @@ a {
   z-index: 1;
   width: 150px;
   aspect-ratio: 1;
-  border: 1px solid rgba(47, 102, 123, 0.16);
+  border: 1px solid rgba(109, 154, 170, 0.14);
   transform: rotate(18deg);
 }
 
 .hero-spark.one {
   top: 23%;
   left: 46%;
-  background: rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .hero-spark.two {
   right: 16%;
   bottom: 14%;
   width: 92px;
-  background: rgba(249, 215, 117, 0.28);
+  background: rgba(250, 234, 182, 0.26);
 }
 
 .hero-logo {
@@ -244,7 +244,7 @@ a {
 
 .eyebrow {
   margin: 0 0 16px;
-  color: #b97d2e;
+  color: #b99562;
   font-family: var(--font-round);
   font-size: 12px;
   font-weight: 900;
@@ -264,6 +264,7 @@ h1 {
   font-size: clamp(62px, 8.7vw, 122px);
   line-height: 0.82;
   font-weight: 900;
+  color: #151a2f;
 }
 
 h2 {
@@ -310,14 +311,15 @@ h3 {
 }
 
 .button.primary {
-  color: var(--night);
-  border-color: var(--cyan);
-  background: var(--cyan);
+  color: #263448;
+  border-color: #bdebf3;
+  background: rgba(189, 235, 243, 0.92);
 }
 
 .button.ghost {
   color: var(--ink);
-  border-color: rgba(38, 52, 72, 0.26);
+  border-color: rgba(49, 59, 88, 0.16);
+  background: rgba(255, 255, 255, 0.38);
 }
 
 .button.small {
@@ -334,7 +336,7 @@ h3 {
   bottom: -26px;
   z-index: 3;
   width: min(44vw, 560px);
-  filter: drop-shadow(0 34px 34px rgba(38, 52, 72, 0.24));
+  filter: drop-shadow(0 34px 34px rgba(82, 100, 122, 0.16));
 }
 
 .hero-visual img {
@@ -350,11 +352,11 @@ h3 {
   z-index: -1;
   width: 112%;
   aspect-ratio: 1;
-  border: 2px solid rgba(255, 255, 255, 0.76);
+  border: 1px solid rgba(255, 255, 255, 0.8);
   border-radius: 50%;
   background:
-    radial-gradient(circle, transparent 48%, rgba(255, 255, 255, 0.26) 49%, transparent 64%),
-    linear-gradient(135deg, rgba(255, 255, 255, 0.34), rgba(125, 201, 223, 0.12));
+    radial-gradient(circle, transparent 48%, rgba(255, 255, 255, 0.22) 49%, transparent 64%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.46), rgba(189, 235, 243, 0.08));
 }
 
 .hero-chibi {
@@ -364,7 +366,7 @@ h3 {
   z-index: 4;
   width: min(13vw, 160px);
   transform: rotate(8deg);
-  filter: drop-shadow(0 18px 22px rgba(38, 52, 72, 0.2));
+  filter: drop-shadow(0 18px 22px rgba(82, 100, 122, 0.14));
 }
 
 .scroll-note {
@@ -379,9 +381,9 @@ h3 {
 }
 
 .ticker {
-  color: var(--night);
+  color: #687489;
   overflow: hidden;
-  background: var(--gold);
+  background: rgba(250, 234, 182, 0.72);
 }
 
 .ticker-track {
@@ -450,7 +452,7 @@ time,
   min-height: 26px;
   padding: 0 10px;
   color: var(--night);
-  background: rgba(140, 205, 224, 0.42);
+  background: rgba(189, 235, 243, 0.54);
   border-radius: 999px;
   font-family: var(--font-round);
   font-size: 11px;
@@ -461,8 +463,8 @@ time,
 .profile {
   color: var(--ink);
   background:
-    radial-gradient(circle at 100% 12%, rgba(140, 205, 224, 0.42), transparent 32%),
-    linear-gradient(135deg, #fffaf0 0%, #f7e5ac 52%, #d6f1ec 100%);
+    radial-gradient(circle at 100% 12%, rgba(189, 235, 243, 0.34), transparent 34%),
+    linear-gradient(135deg, #ffffff 0%, #fffaf0 54%, #f0fbfa 100%);
 }
 
 .split {
@@ -489,8 +491,8 @@ time,
 
 .profile-data div {
   padding: 18px;
-  border: 1px solid rgba(52, 95, 120, 0.16);
-  background: rgba(255, 255, 255, 0.54);
+  border: 1px solid rgba(109, 154, 170, 0.12);
+  background: rgba(255, 255, 255, 0.68);
 }
 
 .profile-data dt {
@@ -521,7 +523,7 @@ time,
 .release-card {
   min-height: 260px;
   padding: 22px;
-  background: var(--white);
+  background: rgba(255, 255, 255, 0.84);
   box-shadow: var(--shadow);
 }
 
@@ -536,7 +538,7 @@ time,
   min-height: 210px;
   background:
     url("assets/mikuru-chibi.webp") center 34% / 72% no-repeat,
-    linear-gradient(135deg, #fff7dc, #d6f1ec);
+    linear-gradient(135deg, #fffdf7, #eefafb);
 }
 
 .mini-jacket {
@@ -547,13 +549,13 @@ time,
 .mini-jacket.coral {
   background:
     radial-gradient(circle at 22% 24%, #fff8ca, transparent 18%),
-    linear-gradient(135deg, #f4b66e, #fff1c6);
+    linear-gradient(135deg, #f7d6aa, #fff8e7);
 }
 
 .mini-jacket.blue {
   background:
     radial-gradient(circle at 70% 30%, #f4fbff, transparent 18%),
-    linear-gradient(135deg, #8ccde0, #fff8ec);
+    linear-gradient(135deg, #d7f4f7, #fffdf8);
 }
 
 .text-link {
@@ -564,8 +566,8 @@ time,
 }
 
 .movie {
-  color: var(--white);
-  background: linear-gradient(135deg, #263448 0%, #345f78 100%);
+  color: var(--ink);
+  background: linear-gradient(135deg, #fbfdff 0%, #eefafb 100%);
 }
 
 .video-card {
@@ -577,9 +579,9 @@ time,
   padding: 30px;
   overflow: hidden;
   background:
-    linear-gradient(to top, rgba(38, 52, 72, 0.84), rgba(38, 52, 72, 0.08)),
+    linear-gradient(to top, rgba(49, 59, 88, 0.5), rgba(255, 255, 255, 0.16)),
     url("assets/mikuru-chibi.webp") center 28% / min(72%, 420px) no-repeat,
-    linear-gradient(135deg, #fff8ec, #d6f1ec);
+    linear-gradient(135deg, #fffdf8, #eefafb);
 }
 
 .play {
@@ -588,7 +590,7 @@ time,
   right: 28px;
   width: 70px;
   height: 70px;
-  background: var(--coral);
+  background: #e9bd82;
   border-radius: 50%;
 }
 
@@ -611,7 +613,7 @@ time,
 
 .video-card small {
   margin-top: 10px;
-  color: rgba(255, 255, 255, 0.76);
+  color: rgba(32, 38, 58, 0.7);
   font-family: var(--font-round);
   font-weight: 800;
 }
@@ -627,8 +629,8 @@ time,
   gap: 22px;
   align-items: center;
   padding: 22px;
-  background: var(--white);
-  border-left: 5px solid var(--coral);
+  background: rgba(255, 255, 255, 0.86);
+  border-left: 5px solid #f1d098;
 }
 
 .schedule-list h3,
@@ -640,9 +642,9 @@ time,
   text-align: center;
   color: var(--ink);
   background:
-    linear-gradient(rgba(255, 248, 236, 0.9), rgba(255, 248, 236, 0.94)),
+    linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 253, 248, 0.96)),
     url("assets/mikuru-main.webp") right bottom / auto 118% no-repeat,
-    linear-gradient(135deg, #fff8ec, #d6f1ec);
+    linear-gradient(135deg, #ffffff, #f0fbfa);
 }
 
 .contact-inner {
@@ -678,8 +680,9 @@ time,
   justify-content: space-between;
   gap: 20px;
   padding: 26px clamp(20px, 5vw, 72px);
-  color: var(--white);
-  background: var(--night);
+  color: #59657a;
+  background: #f8fbfb;
+  border-top: 1px solid var(--line);
 }
 
 .site-footer a {
