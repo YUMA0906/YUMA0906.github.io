@@ -332,25 +332,25 @@ h3 {
 
 .hero-visual {
   position: absolute;
-  right: clamp(20px, 9vw, 130px);
-  bottom: -26px;
+  right: clamp(-58px, -2vw, -22px);
+  bottom: -138px;
   z-index: 3;
-  width: min(44vw, 560px);
+  width: min(56vw, 760px);
   filter: drop-shadow(0 34px 34px rgba(82, 100, 122, 0.16));
 }
 
 .hero-visual img {
   width: 100%;
-  max-height: min(82vh, 760px);
+  max-height: min(108vh, 960px);
   object-fit: contain;
 }
 
 .hero-ring {
   position: absolute;
-  top: 13%;
-  right: -8%;
+  top: 16%;
+  right: 4%;
   z-index: -1;
-  width: 112%;
+  width: 92%;
   aspect-ratio: 1;
   border: 1px solid rgba(255, 255, 255, 0.8);
   border-radius: 50%;
@@ -361,8 +361,8 @@ h3 {
 
 .hero-chibi {
   position: absolute;
-  right: clamp(18px, 6vw, 78px);
-  bottom: 9%;
+  right: clamp(18px, 4vw, 52px);
+  bottom: 7%;
   z-index: 4;
   width: min(13vw, 160px);
   transform: rotate(8deg);
@@ -736,10 +736,10 @@ time,
   }
 
   .hero-visual {
-    right: -68px;
-    bottom: -24px;
-    width: min(48vw, 390px);
-    opacity: 0.88;
+    right: -118px;
+    bottom: -96px;
+    width: min(60vw, 500px);
+    opacity: 0.9;
   }
 
   .hero-chibi {
@@ -808,16 +808,16 @@ time,
 
   .hero-visual {
     position: absolute;
-    right: -172px;
-    bottom: -138px;
+    right: -214px;
+    bottom: -122px;
     z-index: 1;
-    width: 280px;
-    opacity: 0.9;
+    width: 340px;
+    opacity: 0.92;
     pointer-events: none;
   }
 
   .hero-visual img {
-    max-height: 470px;
+    max-height: 520px;
   }
 
   .hero-ring {
