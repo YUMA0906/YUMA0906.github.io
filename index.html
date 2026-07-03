@@ -4,22 +4,27 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>小日向みくる | Kohinata Mikuru Official Website</title>
-  <meta name="description" content="小日向みくるの公式サイト。ニュース、プロフィール、配信、動画、スケジュールを掲載しています。">
+  <meta name="description" content="小日向みくるの公式サイト。ニュース、プロフィール、音楽、動画、お問い合わせを掲載しています。">
   <meta property="og:title" content="小日向みくる | Official Website">
   <meta property="og:description" content="ふわっと甘く、きらっと青く。小日向みくるの公式ホームページ。">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/mikuru-hero-guitar.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800;900&family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="preload" href="assets/fonts/fredericka-the-great.ttf" as="font" type="font/ttf" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&family=M+PLUS+Rounded+1c:wght@500;700;800;900&family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=loader-font-ready">
+  <noscript><style>.site-loader{display:none}</style></noscript>
 </head>
 <body>
+  <div class="site-loader" data-loader aria-hidden="true">
+    <img src="assets/mikuru-logo-header.png" alt="">
+    <span></span>
+  </div>
   <div class="site-shell">
     <header class="site-header" data-header>
       <a class="brand" href="#top" aria-label="小日向みくる top">
-        <span class="brand-mark">み</span>
-        <span>KOHINATA MIKURU</span>
+        <img class="brand-logo" src="assets/mikuru-logo-header.png" alt="小日向みくる">
       </a>
       <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" data-nav-toggle>
         <span></span>
@@ -30,7 +35,6 @@
         <a href="#profile">Profile</a>
         <a href="#music">Music</a>
         <a href="#movie">Movie</a>
-        <a href="#schedule">Schedule</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -41,21 +45,64 @@
         <div class="hero-spark one" aria-hidden="true"></div>
         <div class="hero-spark two" aria-hidden="true"></div>
         <div class="hero-copy">
-          <img class="hero-logo" src="assets/mikuru-logo.png" alt="小日向みくる">
-          <p class="eyebrow">VTuber / Official Website</p>
-          <h1 id="hero-title">KOHINATA<br>MIKURU</h1>
-          <p class="hero-lead">ふわっと甘く、きらっと青く。日なたみたいな声で、あなたの毎日に小さなごほうびを届けるVTuber。</p>
-          <div class="hero-actions">
-            <a class="button primary" href="#movie">Watch</a>
-            <a class="button ghost" href="#schedule">Schedule</a>
+          <h1 id="hero-title">Kohinata<br>Mikuru</h1>
+          <p class="hero-lead">あなたの日常に小さな日向のような幸せを。</p>
+          <div class="hero-actions social-actions" aria-label="小日向みくる social links">
+            <a class="social-button youtube" href="https://www.youtube.com/channel/UCndLVi0fj2Mfl5melvOgy2g?sub_confirmation=1" target="_blank" rel="noreferrer">
+              <span class="social-code"><img src="assets/icons/youtube.svg" alt="" aria-hidden="true"></span>
+              <span><small>YouTube</small><strong>うたと動画</strong></span>
+            </a>
+            <a class="social-button x" href="https://twitter.com/kohinata_mikuru" target="_blank" rel="noreferrer">
+              <span class="social-code"><img src="assets/icons/x.svg" alt="" aria-hidden="true"></span>
+              <span><small>X</small><strong>お知らせ</strong></span>
+            </a>
+            <a class="social-button tiktok" href="https://www.tiktok.com/@kohinata_mikuru" target="_blank" rel="noreferrer">
+              <span class="social-code"><img src="assets/icons/tiktok.svg" alt="" aria-hidden="true"></span>
+              <span><small>TikTok</small><strong>ショート</strong></span>
+            </a>
+            <a class="social-button marshmallow" href="https://marshmallow-qa.com/pctknbc1amhcs8x?t=Or4Je0&utm_medium=url_text&utm_source=promotion" target="_blank" rel="noreferrer">
+              <span class="social-code"><img src="assets/icons/marshmallow.png" alt="" aria-hidden="true"></span>
+              <span><small>Marshmallow</small><strong>質問箱</strong></span>
+            </a>
+            <a class="social-button wishlist" href="https://www.amazon.jp/hz/wishlist/ls/1GRUKDUY8OE3J?ref_=wl_share" target="_blank" rel="noreferrer">
+              <span class="social-code"><img src="assets/icons/wishlist.svg" alt="" aria-hidden="true"></span>
+              <span><small>Amazon</small><strong>ほしいもの</strong></span>
+            </a>
+          </div>
+          <div class="hero-video-row" aria-label="おすすめ動画">
+            <a class="hero-video-photo is-left" href="https://youtu.be/5SBlu1ZO3Hs?si=2UuXNxtiZdinBAmy" target="_blank" rel="noreferrer" aria-label="YouTubeで言ったじゃんかを再生">
+              <span class="photo-tape" aria-hidden="true"></span>
+              <span class="photo-frame">
+                <img src="assets/youtube-5SBlu1ZO3Hs.jpg" alt="言ったじゃんかのサムネイル">
+                <span class="photo-play" aria-hidden="true"></span>
+              </span>
+              <span class="photo-caption">
+                <small>YouTube Pickup</small>
+                <strong>言ったじゃんか (オリ曲)</strong>
+              </span>
+            </a>
+            <a class="hero-video-photo is-right" href="https://www.youtube.com/live/tGobQn2r0gE?si=WArHNsj7KVJzeGq5" target="_blank" rel="noreferrer" aria-label="YouTubeで弾き語り配信を再生">
+              <span class="photo-tape" aria-hidden="true"></span>
+              <span class="photo-frame">
+                <img src="assets/youtube-tGobQn2r0gE.jpg" alt="弾き語り配信のサムネイル">
+                <span class="photo-play" aria-hidden="true"></span>
+              </span>
+              <span class="photo-caption">
+                <small>YouTube Live</small>
+                <strong>弾き語り配信</strong>
+              </span>
+            </a>
           </div>
         </div>
-        <div class="hero-visual" aria-label="小日向みくる key visual">
+        <div class="hero-visual" aria-label="小日向みくる key visual" data-hero-visual>
           <div class="hero-ring" aria-hidden="true"></div>
-          <img src="assets/mikuru-hero-guitar.webp" alt="ギターを抱えた小日向みくるのイラスト">
-        </div>
-        <div class="hero-chibi" aria-hidden="true">
-          <img src="assets/mikuru-chibi.webp" alt="">
+          <img class="hero-visual-image hero-visual-guitar" src="assets/mikuru-hero-guitar.webp" alt="ギターを抱えた小日向みくるのイラスト">
+          <img class="hero-visual-image hero-visual-mic" src="assets/mikuru-hero-rotate-03.png" alt="マイクを持つ小日向みくるのイラスト">
+          <img class="hero-visual-image hero-visual-flowers" src="assets/mikuru-hero-rotate-01.png" alt="花束を持つ小日向みくるのイラスト">
+          <img class="hero-visual-image hero-visual-stretch" src="assets/mikuru-hero-rotate-04.png" alt="水色の服で伸びをする小日向みくるのイラスト">
+          <img class="hero-visual-image hero-visual-cheer" src="assets/mikuru-hero-rotate-02.png" alt="笑顔でポーズをとる小日向みくるのイラスト">
+          <img class="hero-visual-image hero-visual-standing" src="assets/mikuru-hero-rotate-05-crop.png?v=armcrop" alt="黄色い上着を着た小日向みくるの上半身イラスト">
+          <img class="hero-visual-image hero-visual-umbrella" src="assets/mikuru-hero-umbrella-crop.png" alt="傘を持つ小日向みくるのイラスト">
         </div>
         <div class="scroll-note">Scroll</div>
       </section>
@@ -63,7 +110,7 @@
       <section class="ticker" aria-label="Latest updates">
         <div class="ticker-track">
           <span>Kohinata Mikuru Official Website</span>
-          <span>Streaming and videos on YouTube</span>
+          <span>Videos and music on YouTube</span>
           <span>Fan art and updates on X</span>
           <span>Kohinata Mikuru Official Website</span>
         </div>
@@ -82,11 +129,6 @@
               <h3>公式ホームページを公開しました</h3>
             </article>
             <article class="news-item">
-              <time datetime="2026-06-28">2026.06.28</time>
-              <span class="tag">Live</span>
-              <h3>次回配信スケジュールを更新しました</h3>
-            </article>
-            <article class="news-item">
               <time datetime="2026-06-14">2026.06.14</time>
               <span class="tag">Goods</span>
               <h3>小日向みくるの最新情報を順次掲載予定</h3>
@@ -102,13 +144,12 @@
             <h2>日なたみたいに、<br>こころをほどく声。</h2>
           </div>
           <div class="profile-copy">
-            <p>小日向みくるは、やさしい色合いとふんわりした空気感が魅力のVTuber。配信、動画、SNSを中心に、見に来てくれた人がほっとできる時間を届けます。</p>
+            <p>小日向みくるは、やさしい色合いとふんわりした空気感が魅力のVTuber。動画、音楽、SNSを中心に、見に来てくれた人がほっとできる時間を届けます。</p>
             <dl class="profile-data">
               <div><dt>Name</dt><dd>小日向みくる</dd></div>
               <div><dt>Romanized</dt><dd>Kohinata Mikuru</dd></div>
               <div><dt>Style</dt><dd>Pastel / Cozy</dd></div>
             </dl>
-            <img class="profile-mascot" src="assets/mikuru-chibi.webp" alt="小日向みくるのミニキャラ">
           </div>
         </div>
       </section>
@@ -129,13 +170,13 @@
                 <p class="tag">Pickup</p>
                 <h3>Latest Activity</h3>
                 <p>歌、雑談、ショート動画など、いま見てほしい活動をここにまとめます。</p>
-                <a class="button small" href="#movie">Watch</a>
+                <a class="button small" href="#movie">Movie</a>
               </div>
             </article>
             <article class="release-card">
               <div class="mini-jacket coral"></div>
-              <h3>Streaming</h3>
-              <p>YouTube Live</p>
+              <h3>Songs</h3>
+              <p>Cover / Original</p>
             </article>
             <article class="release-card">
               <div class="mini-jacket blue"></div>
@@ -151,7 +192,7 @@
           <div>
             <p class="eyebrow">Movie</p>
             <h2>Latest Video</h2>
-            <p class="muted">YouTube の埋め込みURLに差し替えるだけで、最新配信やおすすめ動画を掲載できます。</p>
+            <p class="muted">YouTube の埋め込みURLに差し替えるだけで、おすすめ動画を掲載できます。</p>
           </div>
           <a class="video-card" href="https://www.youtube.com/" target="_blank" rel="noreferrer" aria-label="YouTubeを開く">
             <span class="play"></span>
@@ -161,37 +202,11 @@
         </div>
       </section>
 
-      <section class="section-band light" id="schedule">
-        <div class="section-inner">
-          <div class="section-heading">
-            <p class="eyebrow">Schedule</p>
-            <h2>配信・ライブ予定</h2>
-          </div>
-          <div class="schedule-list">
-            <article>
-              <time datetime="2026-07-10">07.10 Fri</time>
-              <h3>定期配信</h3>
-              <p>21:00 JST / YouTube Live</p>
-            </article>
-            <article>
-              <time datetime="2026-07-18">07.18 Sat</time>
-              <h3>雑談配信</h3>
-              <p>22:00 JST / YouTube Live</p>
-            </article>
-            <article>
-              <time datetime="2026-08-01">08.01 Sat</time>
-              <h3>コラボ・企画配信</h3>
-              <p>20:00 JST / YouTube Live</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
       <section class="section-band contact" id="contact">
         <div class="section-inner contact-inner">
           <p class="eyebrow">Contact</p>
           <h2>お仕事・コラボのご相談はこちら</h2>
-          <p>配信コラボ、動画企画、タイアップなどのご相談を受け付けています。</p>
+          <p>動画企画、コラボ、タイアップなどのご相談を受け付けています。</p>
           <div class="socials" aria-label="social links">
             <a href="#">YouTube</a>
             <a href="#">X</a>
@@ -207,6 +222,6 @@
       <a href="#top">Back to top</a>
     </footer>
   </div>
-  <script src="script.js"></script>
+  <script src="script.js?v=loader-font-ready"></script>
 </body>
 </html>
