@@ -11,10 +11,10 @@
   --mint: #effaf8;
   --line: rgba(32, 38, 58, 0.09);
   --shadow: 0 24px 70px rgba(92, 107, 130, 0.1);
-  --font-base: "Zen Kaku Gothic New", system-ui, sans-serif;
-  --font-display: "Outfit", "Zen Kaku Gothic New", system-ui, sans-serif;
-  --font-ui: "Outfit", "Zen Kaku Gothic New", system-ui, sans-serif;
-  --font-accent: "Shippori Mincho", "Zen Kaku Gothic New", serif;
+  --font-base: "Zen Maru Gothic", system-ui, sans-serif;
+  --font-display: "M PLUS Rounded 1c", "Zen Maru Gothic", system-ui, sans-serif;
+  --font-ui: "M PLUS Rounded 1c", "Zen Maru Gothic", system-ui, sans-serif;
+  --font-accent: "Zen Maru Gothic", system-ui, sans-serif;
 }
 
 * {
@@ -332,16 +332,29 @@ h3 {
 
 .hero-visual {
   position: absolute;
-  right: clamp(-58px, -2vw, -22px);
-  bottom: -138px;
+  right: clamp(-92px, -5vw, -58px);
+  bottom: -122px;
   z-index: 3;
-  width: min(56vw, 760px);
+  width: min(52vw, 700px);
   filter: drop-shadow(0 34px 34px rgba(82, 100, 122, 0.16));
+}
+
+.hero-visual::after {
+  position: absolute;
+  inset: auto -2px -2px auto;
+  z-index: 2;
+  width: 42%;
+  height: 46%;
+  pointer-events: none;
+  content: "";
+  background:
+    linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 254, 251, 0.78) 78%),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 254, 251, 0.78) 74%);
 }
 
 .hero-visual img {
   width: 100%;
-  max-height: min(108vh, 960px);
+  max-height: min(104vh, 920px);
   object-fit: contain;
 }
 
@@ -736,9 +749,9 @@ time,
   }
 
   .hero-visual {
-    right: -118px;
-    bottom: -96px;
-    width: min(60vw, 500px);
+    right: -154px;
+    bottom: -92px;
+    width: min(58vw, 450px);
     opacity: 0.9;
   }
 
@@ -808,11 +821,11 @@ time,
 
   .hero-visual {
     position: absolute;
-    right: -214px;
-    bottom: -122px;
+    right: -232px;
+    bottom: -128px;
     z-index: 1;
-    width: 340px;
-    opacity: 0.92;
+    width: 334px;
+    opacity: 0.9;
     pointer-events: none;
   }
 
