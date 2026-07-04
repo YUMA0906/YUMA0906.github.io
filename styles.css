@@ -1161,25 +1161,14 @@ time,
 }
 
 .top-float-sticker {
-  display: grid;
-  width: clamp(70px, 7vw, 96px);
-  height: clamp(70px, 7vw, 96px);
-  place-items: center;
-  background:
-    radial-gradient(circle at 34% 24%, rgba(255, 255, 255, 0.98), transparent 30%),
-    linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(189, 235, 243, 0.38));
-  border: 1px solid rgba(255, 255, 255, 0.92);
-  border-radius: 999px;
-  box-shadow:
-    0 16px 34px rgba(78, 96, 118, 0.15),
-    inset 0 1px 0 rgba(255, 255, 255, 0.92);
-  overflow: hidden;
+  display: block;
+  width: clamp(76px, 7.6vw, 104px);
+  filter: drop-shadow(0 16px 20px rgba(78, 96, 118, 0.18));
 }
 
 .top-float-sticker img {
-  width: 116%;
-  height: 116%;
-  object-fit: contain;
+  width: 100%;
+  height: auto;
   object-position: center bottom;
 }
 
@@ -1457,8 +1446,7 @@ time,
   }
 
   .top-float-sticker {
-    width: 62px;
-    height: 62px;
+    width: 68px;
   }
 }
 
