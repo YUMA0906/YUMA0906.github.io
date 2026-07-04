@@ -1093,11 +1093,11 @@ time,
   right: clamp(16px, 3vw, 42px);
   bottom: clamp(18px, 3vw, 34px);
   z-index: 40;
-  display: inline-flex;
-  align-items: end;
-  gap: 10px;
+  display: block;
+  width: clamp(226px, 19vw, 268px);
+  height: clamp(132px, 11vw, 154px);
   color: #41546a;
-  border-radius: 999px;
+  border-radius: 26px;
   opacity: 0;
   pointer-events: none;
   filter: drop-shadow(0 18px 28px rgba(78, 96, 118, 0.16));
@@ -1129,15 +1129,18 @@ time,
 }
 
 .top-float-bubble {
-  position: relative;
+  position: absolute;
+  right: clamp(70px, 6.5vw, 84px);
+  bottom: clamp(58px, 5vw, 70px);
   display: inline-flex;
   align-items: center;
-  min-height: 42px;
-  padding: 0 16px;
+  min-height: 44px;
+  padding: 0 18px 1px;
   background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.94), rgba(245, 252, 253, 0.86));
+    radial-gradient(circle at 18% 18%, rgba(255, 255, 255, 0.96), transparent 30%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(245, 252, 253, 0.88));
   border: 1px solid rgba(109, 154, 170, 0.18);
-  border-radius: 999px;
+  border-radius: 24px 24px 12px 24px;
   box-shadow:
     0 10px 24px rgba(78, 96, 118, 0.12),
     inset 0 1px 0 rgba(255, 255, 255, 0.96);
@@ -1147,20 +1150,37 @@ time,
   white-space: nowrap;
 }
 
+.top-float-bubble::before,
 .top-float-bubble::after {
   position: absolute;
-  right: -7px;
-  bottom: 11px;
-  width: 14px;
-  height: 14px;
   content: "";
-  background: rgba(250, 253, 253, 0.92);
-  border-top: 1px solid rgba(109, 154, 170, 0.18);
-  border-right: 1px solid rgba(109, 154, 170, 0.18);
-  transform: rotate(45deg);
+  clip-path: polygon(0 4%, 100% 54%, 0 100%);
+}
+
+.top-float-bubble::before {
+  right: -21px;
+  bottom: 3px;
+  width: 31px;
+  height: 26px;
+  background: rgba(109, 154, 170, 0.18);
+  filter: drop-shadow(3px 5px 7px rgba(78, 96, 118, 0.09));
+  transform: rotate(6deg);
+}
+
+.top-float-bubble::after {
+  right: -18px;
+  bottom: 5px;
+  width: 28px;
+  height: 22px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(245, 252, 253, 0.88));
+  transform: rotate(7deg);
 }
 
 .top-float-sticker {
+  position: absolute;
+  right: 0;
+  bottom: 0;
   display: block;
   width: clamp(76px, 7.6vw, 104px);
   filter: drop-shadow(0 16px 20px rgba(78, 96, 118, 0.18));
@@ -1436,10 +1456,13 @@ time,
   .top-float {
     right: 14px;
     bottom: 14px;
-    gap: 7px;
+    width: 198px;
+    height: 118px;
   }
 
   .top-float-bubble {
+    right: 54px;
+    bottom: 50px;
     min-height: 36px;
     padding-inline: 12px;
     font-size: 11px;
