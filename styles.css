@@ -1177,9 +1177,9 @@ time,
 }
 
 .top-float-sticker img {
-  width: 104%;
-  height: 104%;
-  object-fit: cover;
+  width: 116%;
+  height: 116%;
+  object-fit: contain;
   object-position: center bottom;
 }
 
