@@ -9,6 +9,17 @@ if (cleanRoute) {
   window.location.replace(`${cleanRoute}${window.location.search}${window.location.hash}`);
 }
 
+const cleanTopHash = () => {
+  if (window.location.pathname === "/" && window.location.hash === "#top") {
+    window.history.replaceState(null, "", `/${window.location.search}`);
+  }
+};
+
+cleanTopHash();
+window.addEventListener("DOMContentLoaded", cleanTopHash);
+window.addEventListener("pageshow", cleanTopHash);
+window.setTimeout(cleanTopHash, 0);
+
 const header = document.querySelector("[data-header]");
 const nav = document.querySelector("[data-nav]");
 const navToggle = document.querySelector("[data-nav-toggle]");
