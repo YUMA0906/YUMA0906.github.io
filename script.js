@@ -1,3 +1,14 @@
+const cleanRouteMap = new Map([
+  ["/index.html", "/"],
+  ["/contact.html", "/contact/"],
+  ["/contact/index.html", "/contact/"]
+]);
+const cleanRoute = cleanRouteMap.get(window.location.pathname);
+
+if (cleanRoute) {
+  window.location.replace(`${cleanRoute}${window.location.search}${window.location.hash}`);
+}
+
 const header = document.querySelector("[data-header]");
 const nav = document.querySelector("[data-nav]");
 const navToggle = document.querySelector("[data-nav-toggle]");

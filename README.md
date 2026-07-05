@@ -1,16 +1,15 @@
 # Kohinata Mikuru Official Website
 
-VTuber活動用の静的ホームページです。GitHub Pages でそのまま公開できます。
+小日向みくる公式サイトの静的ファイルです。
 
-## 差し替えポイント
+## URL設計
 
-- `index.html` のプロフィール、ニュース、配信予定
-- `assets/mikuru-main.webp` のメイン立ち絵
-- `assets/mikuru-chibi.webp` のミニキャラ
-- `assets/mikuru-logo.png` の名前ロゴ
-- `Contact` セクションの YouTube / X / TikTok / Mail リンク
-- `Movie` セクションの YouTube URL
+- `GET /` - トップページ
+- `GET /contact/` - お問い合わせページ
+- `POST` - Google Form 側で送信処理
+
+`/index.html`、`/contact.html`、`/contact/index.html` にアクセスされた場合は、見た目に出ないようにクリーンURLへリダイレクトします。
 
 ## Local Preview
 
-`index.html` をブラウザで開くか、任意の静的サーバーでルートを配信してください。
+静的サーバーでルートを配信してください。
