@@ -955,42 +955,9 @@ h3 {
   gap: 20px;
 }
 
-.news-list {
-  border-top: 1px solid var(--line);
-}
-
-.news-item {
-  display: grid;
-  grid-template-columns: 120px 90px 1fr;
-  gap: 20px;
-  align-items: center;
-  padding: 24px 0;
-  border-bottom: 1px solid var(--line);
-}
-
-.news-item h3 {
-  margin: 0;
-  font-size: clamp(17px, 2vw, 24px);
-}
-
 time,
 .muted {
   color: var(--ink-soft);
-}
-
-.tag {
-  display: inline-flex;
-  width: fit-content;
-  align-items: center;
-  min-height: 26px;
-  padding: 0 10px;
-  color: var(--night);
-  background: rgba(189, 235, 243, 0.54);
-  border-radius: 999px;
-  font-family: var(--font-ui);
-  font-size: 11px;
-  font-weight: 900;
-  text-transform: uppercase;
 }
 
 .profile {
@@ -1058,24 +1025,37 @@ time,
   color: var(--ink-soft);
 }
 
-.socials {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-  margin-top: 34px;
-}
-
-.socials a {
+.contact-mail {
+  position: relative;
   display: inline-flex;
-  min-width: 112px;
-  min-height: 44px;
+  min-width: 220px;
+  min-height: 54px;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(38, 52, 72, 0.22);
+  margin-top: 34px;
+  padding: 0 26px;
+  color: #35465c;
+  background:
+    radial-gradient(circle at 18% 20%, rgba(255, 255, 255, 0.98), transparent 30%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.88), rgba(235, 250, 252, 0.72));
+  border: 1px solid rgba(109, 154, 170, 0.18);
   border-radius: 999px;
+  box-shadow:
+    0 18px 34px rgba(78, 96, 118, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.94);
   font-family: var(--font-ui);
+  font-size: 14px;
   font-weight: 900;
+  transition:
+    box-shadow 0.22s ease,
+    transform 0.22s ease;
+}
+
+.contact-mail:hover {
+  box-shadow:
+    0 24px 44px rgba(78, 96, 118, 0.17),
+    inset 0 1px 0 rgba(255, 255, 255, 0.94);
+  transform: translateY(-3px);
 }
 
 .site-footer {
@@ -1358,11 +1338,6 @@ time,
     grid-template-columns: 1fr;
   }
 
-  .news-item {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-
   .section-heading.row {
     align-items: flex-start;
     flex-direction: column;
@@ -1429,8 +1404,7 @@ time,
   }
 
   .hero-actions,
-  .hero-video-row,
-  .socials {
+  .hero-video-row {
     align-items: stretch;
     flex-direction: column;
   }
@@ -1445,8 +1419,8 @@ time,
     margin-top: -2px;
   }
 
-  .socials a {
-    width: 100%;
+  .contact-mail {
+    width: min(280px, 78vw);
   }
 
   .scroll-note {
