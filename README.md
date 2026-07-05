@@ -10,6 +10,13 @@
 
 `/index.html`、`/contact.html`、`/contact/index.html` にアクセスされた場合は、見た目に出ないようにクリーンURLへリダイレクトします。
 
+## Cloudflare Pages
+
+- Project name: `kohinata-mikuru-official`
+- Default URL: `https://kohinata-mikuru-official.pages.dev`
+- Build command: none
+- Output directory: `.`
+
 ## Local Preview
 
 静的サーバーでルートを配信してください。
